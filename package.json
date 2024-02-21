@@ -1,7 +1,7 @@
 {
-  "name": "vue-popup",
+  "name": "vue-popup-nayan",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/vue-components.cjs.js",
   "module": "dist/vue-components.es.js",
@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && npm run build:styles",
-    "build:styles": "postcss src/style.scss",
+    "build:styles": "postcss src/style.scss -o dist/index.css",
     "preview": "vite preview"
   },
   "dependencies": {
