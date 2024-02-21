@@ -7,9 +7,9 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: resolve(__dirname, "./src/index.js"),
+      entry: resolve(__dirname, "src/index.js"),
       formats: ["es", "cjs"],
-      fileName: (format) => `vue-components.${format}.js`,
+      fileName: (format) => `vue-popup-nayan.${format}.js`,
     },
     rollupOptions: {
       external: ["vue"],
