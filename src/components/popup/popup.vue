@@ -1,5 +1,5 @@
 <template>
-  <div v-click-outside="hideDropdown" class="absolute group">
+  <div v-click-outside="hideDropdown" class="relative group">
     <button @click="handlePopup()">
       <slot name="target">
         <div class="bg-blue-500 text-white px-6 rounded py-2">
@@ -7,7 +7,11 @@
         </div>
       </slot>
     </button>
-    <div v-if="isPopupOpen" :class="_popup_class">
+    <div
+      v-if="isPopupOpen"
+      class="absolute z-40 bg-white top-10 rounded left-10"
+      :class="_popup_class"
+    >
       <slot name="content">
         <div class="p-2 shadow-md rounded w-52">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -20,7 +24,7 @@
   </div>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 const props = defineProps({
   label: {
     type: String,
@@ -28,7 +32,7 @@ const props = defineProps({
   },
   _popup_class: {
     type: String,
-    default: "_popup_class",
+    default: "top-0 left-4 w-fit h-fit",
   },
 });
 
