@@ -1,10 +1,10 @@
 {
   "name": "vue-popup-nayan",
   "private": false,
-  "version": "0.0.8",
+  "version": "0.1.0",
   "type": "module",
-  "main": "dist/vue-components.cjs.js",
-  "module": "dist/vue-components.es.js",
+  "main": "dist/vue-popup-nayan.cjs.js",
+  "module": "dist/vue-popup-nayan.es.js",
   "files": [
     "dist"
   ],
@@ -15,6 +15,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "click-outside-vue3": "^4.0.1",
     "sass": "^1.71.0",
     "vue": "^3.2.47",
     "vue-popup-nayan": "^0.0.2"

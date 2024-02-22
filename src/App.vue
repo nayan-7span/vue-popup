@@ -1,7 +1,6 @@
 <template>
-  <p>package</p>
-  <VButton />
+  <VPopup />
 </template>
 <script setup>
-import VButton from "@/components/Button/Button.vue";
+import VPopup from "@/components/popup/popup.vue";
 </script>
