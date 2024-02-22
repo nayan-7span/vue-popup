@@ -1,4 +1,5 @@
 import * as components from "./components/index.js";
+import "./style.scss";
 
 const defaultComponents = components?.default;
 const vueComponents = {
