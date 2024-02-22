@@ -1,3 +1,6 @@
 <template>
-  <div class="bg-red-500">App file</div>
+  <VButton />
 </template>
+<script setup>
+import VButton from "@/components/Button/Button.vue";
+</script>
