@@ -1,3 +1,3 @@
-import { VPopup } from "./Button";
+import { VPopup } from "./popup";
 
 export default { VPopup };
