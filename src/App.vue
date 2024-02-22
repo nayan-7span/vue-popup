@@ -1,4 +1,5 @@
 <template>
+  <p>package</p>
   <VButton />
 </template>
 <script setup>
