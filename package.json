@@ -15,10 +15,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "click-outside-vue3": "^4.0.1",
     "sass": "^1.71.0",
     "vue": "^3.2.47",
     "vue-popup-nayan": "^0.0.2"
+  },
+  "peerDependencies": {
+    "click-outside-vue3": "^4.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
